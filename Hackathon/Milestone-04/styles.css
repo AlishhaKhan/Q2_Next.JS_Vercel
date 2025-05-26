@@ -1,0 +1,149 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #74ca74;
+    color: #090250ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container: Flex Layout for Form and Preview */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background:  #ebecee;
+    border-radius: 10px;
+    box-shadow:0 10px 25px 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Keeps the container from being too wide */
+    max-width: 1200px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Form and Preview Sections */
+.form-section, #resumeOutput {
+    flex: 1;
+    padding: 20px;
+    color: #f0f4f8 ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px  rgba(9, 170, 44, 0.5);
+    min-width: 350px; /* Minimum width to avoid making it too small */
+    max-width: 450px; /* Maximum width to keep it balanced */
+    height: auto; /* Makes the height dynamic based on content */
+}
+
+/* Form Field Styling */
+fieldset {
+    border: 2px solid #023e4d;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #b4f5a6;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color:  #b4f5a6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0a0b5f;
+    margin-bottom: 10px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #2c3e50;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #0a89a8;
+}
+
+/* Button Styling */
+#generate {
+    background-color: #1e2b1e;
+    color: #e5edf8;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#generate:hover {
+    background-color: #092677;
+}
+
+/* Resume Output Section */
+#resumeOutput {
+    padding: 20px;
+    border: 2px solid #2c3e50;
+    background-color: rgb(136, 235, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resumeOutput h2 {
+    color: #0a0b5f;
+    text-align: center;
+}
+
+#profileImage {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 2px solid #2c3e50;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks form and preview for small screens */
+    }
+
+    .form-section, #resumeOutput {
+        max-width: 100;
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    #profileImage {
+        width: 50px;
+        height: 50px;
+    }
+}

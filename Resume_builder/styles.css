@@ -1,0 +1,118 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 20px;
+}
+
+/* Form Section */
+.form-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #0d47a1;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #ffd600;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#generate {
+    background-color: #ffd600;
+    color: #0d47a1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#generate:hover {
+    background-color: #ffca28;
+}
+
+/* Resume Preview */
+.resume-preview {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#preview-name {
+    font-size: 2.5rem;
+    color: #0d47a1;
+}
+
+#preview-title {
+    font-size: 1.5rem;
+    color: #ffd600;
+}
+
+h3 {
+    color: #0d47a1;
+}
+
+#download-pdf {
+    background-color: #0d47a1;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#download-pdf:hover {
+    background-color: #1565c0;
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#profile-image {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 60%;
+    border: 3px solid #0d47a1;
+}

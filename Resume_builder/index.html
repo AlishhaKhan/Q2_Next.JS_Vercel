@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Resume Builder</h1>
+            <form id="resume-form">
+                <!-- Personal Info -->
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="text" id="title" placeholder="Job Title" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+
+                <h2>Upload Profile Picture</h2>
+                <input type="file" id="image-upload" accept="image/*">
+
+                <!-- Work Experience -->
+                <h2>Work Experience</h2>
+                <input type="text" id="company" placeholder="Company Name">
+                <input type="text" id="position" placeholder="Position">
+                <input type="text" id="duration" placeholder="Duration">
+
+                <!-- Education -->
+                <h2>Education</h2>
+                <input type="text" id="school" placeholder="School Name">
+                <input type="text" id="degree" placeholder="Degree">
+                <input type="text" id="year" placeholder="Graduation Year">
+
+                <!-- Skills -->
+                <h2>Skills</h2>
+                <input type="text" id="skills" placeholder="Skills (comma separated)">
+
+                <button type="button" id="generate">Generate Resume</button>
+            </form>
+        </div>
+
+        <div class="resume-preview" id="resume-preview">
+            <div class="profile-image-container">
+                <img id="profile-image" src="" alt="Profile Picture">
+            </div>
+
+        <!-- Resume Preview -->
+        <div class="resume-preview" id="resume-preview">
+            <h1 id="preview-name">Full Name</h1>
+            <h2 id="preview-title">Job Title</h2>
+            <p id="preview-email">Email</p>
+            <p id="preview-phone">Phone Number</p>
+        </br>
+            
+            <h3>Work Experience</h3>
+            <p id="preview-company">Company: </p>
+            <p id="preview-position">Position: </p>
+            <p id="preview-duration">Duration: </p>
+        </br>
+
+            <h3>Education</h3>
+            <p id="preview-school">School: </p>
+            <p id="preview-degree">Degree: </p>
+            <p id="preview-year">Year: </p>
+        </br>
+
+            <h3>Skills</h3>
+            <p id="preview-skills">Skills: </p>
+
+            <button id="download-pdf">Download as PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

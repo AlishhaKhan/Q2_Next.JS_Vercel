@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <form id="resume-form">
+                <h1>Static Resume Builder By Alisha Arshad</h1>
+                <!-- Personal Info -->
+                 <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" placeholder="Full Name" required></br>
+
+                <label for="email"> Email: </label>
+                <input type="text" id="email" placeholder="Email" required>
+
+                <label for="tel"> Phone: </label>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                </fieldset>
+
+
+                <fieldset>
+                <!-- Work Experience -->
+                <legend>Work Experience</legend>
+                <label for="name"> Company: </label>
+                <input type="text" id="company" placeholder="Company Name"></br>
+
+                <label for="position"> Position: </label>
+                <input type="text" id="position" placeholder="Position">
+
+                <label for="duration"> Duration: </label>
+                <input type="text" id="duration" placeholder="Duration">
+                </fieldset>
+
+                <fieldset>
+                <!-- Education -->
+                <legend>Education</legend>
+                <label for="school"> School: </label>
+                <input type="text" id="school" placeholder="School Name"></br>
+
+                <label for="degree"> Degree: </label>
+                <input type="text" id="degree" placeholder="Degree">
+
+                <label for="graduation"> Graduation: </label>
+                <input type="text" id="year" placeholder="Graduation Year">
+                </fieldset>
+
+                <fieldset>
+                <!-- Skills -->
+                <legend>Skills</legend>
+                <label for="skills"> Skills: </label>
+                <input type="text" id="skills" placeholder="Skills (comma separated)">
+                </fieldset>
+
+                <button type="button" id="generate">Generate Resume</button>
+            </form>
+</body>
+</html>
